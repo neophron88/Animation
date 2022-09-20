@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialDesign">
         <activity
-            android:name=".MainActivity"
+            android:name=".AnimActivity"
             android:exported="true">
 
             <intent-filter>
