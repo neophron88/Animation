@@ -21,21 +21,5 @@ class AnimActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityAnimBinding.inflate(layoutInflater).also { setContentView(it.root) }
 
-
-        var isTrue = true
-
-        binding.checkmark.setOnClickListener { _ ->
-
-            binding.checkmark.background = if (isTrue) {
-                ActivityCompat.getDrawable(this, R.drawable.avd_heart_outline)
-            } else {
-                ActivityCompat.getDrawable(this, R.drawable.avd_heart_fill)
-            }
-
-            val animation = binding.checkmark.background as AnimatedVectorDrawable
-            animation.start()
-            isTrue = !isTrue
-        }
-
     }
 }

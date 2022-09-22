@@ -52,6 +52,7 @@ class LazyFragmentsViewBinding<VB>(
         return binding!!
     }
 
+    @Suppress("UNCHECKED_CAST")
     private fun checkViewLifeCycle() {
          if (viewLifecycleOwner != fragment.viewLifecycleOwner) {
 
